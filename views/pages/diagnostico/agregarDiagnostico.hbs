@@ -1,0 +1,13 @@
+{{> header}}
+<h2>{{viewTitle}}</h2>
+<form action="/diagnostico" method="POST">
+    <input type="hidden" name="_id" value="{{diagnostico._id}}" />
+    ID Diagnostico
+    <input type="text" name="idDiag" value="{{diagnostico.idDiag}}" />
+    ID Paciente
+    <input type="text" name="idpaciente" value="{{diagnostico.idpaciente}}"><br />
+    Diagnostico
+    <input type="text" name="diag" value="{{diagnostico.diag}}"><br />
+    
+    <center><button type="submit" class="btn btn-info btn-lg">Guardar</button></center>
+</form>

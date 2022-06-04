@@ -1,0 +1,26 @@
+{{> header}}
+<h2>{{viewTitle}}</h2>
+<table border="1">
+    <thead>
+        <th>ID Diagnostico </th> 
+        <th>ID Paciente </th>
+        <th>Diagnostico </th>
+    </thead>
+    <tbody>
+        {{#each list}}
+            <tr>
+                <td>{{this.idDiag}}</td> 
+                <td>{{this.idpaciente}}</td>
+                <td>{{this.diag}}</td>
+
+                <td>
+                    <a href="/diagnostico/{{this._id}}">Edit</a>
+                    <a href="/diagnostico/delete/{{this._id}}"
+                    onclick="return confirm('Estas seguro de eliminar?');">
+                    Eliminar
+                    </a>
+                </td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>

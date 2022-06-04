@@ -1,0 +1,15 @@
+{{> header}}
+<h2>{{viewTitle}}</h2>
+<form action="/medicamento" method="POST">
+    <input type="hidden" name="_id" value="{{medicamento._id}}" />
+    ID Medicamentos
+    <input type="text" name="idmedi" value="{{medicamento.idmedi}}"><br />
+    ID Paciente
+    <input type="text" name="idpaciente" value="{{medicamento.idpaciente}}"><br />
+    Nombre Medicamento
+    <input type="text" name="namemedi" value="{{medicamento.namemedi}}"><br />
+    Fecha de Receta
+    <input type="text" name="recetaDate" value="{{medicamento.recetaDate}}"><br />
+
+    <center><button type="submit" class="btn btn-info btn-lg">Guardar</button></center>
+</form>

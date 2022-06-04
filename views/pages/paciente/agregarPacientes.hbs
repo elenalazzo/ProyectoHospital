@@ -1,0 +1,19 @@
+{{> header}}
+<h2>{{viewTitle}}</h2>
+<form action="/paciente" method="POST">
+    <input type="hidden" name="_id" value="{{paciente._id}}" />
+    ID 
+    <input type="text" name="idpaciente" value="{{paciente.idpaciente}}"><br />
+    Nombres
+    <input type="text" name="nombrepaciente" value="{{paciente.nombrepaciente}}"><br />
+    Apellidos
+    <input type="text" name="apellidopaciente" value="{{paciente.apellidopaciente}}"><br />
+    DUI
+    <input type="text" name="dui" value="{{paciente.dui}}"><br />
+    Descripción del Paciente
+    <input type="text" name="diagnostico" value="{{paciente.diagnostico}}"><br />
+    Nombre del Doctor
+    <input type="text" name="nombredoctor" value="{{paciente.nombredoctor}}"><br />
+
+    <center><button type="submit" class="btn btn-info btn-lg">Guardar</button></center>
+</form>

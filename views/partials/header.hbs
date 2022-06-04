@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Ruiz Hospital</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+    <div class="dropdown">
+      <button class="btn dropdown-toggle " style="color: #051367" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        Pacientes
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="/paciente" style="color:#2D31FA">Agregar Paciente</a></li>
+        <li><a class="dropdown-item" display="flex" href="/paciente/listaPacientes" style="color:#2D31FA">Lista de Pacientes</a></li>
+      </ul>
+    </div>
+
+    <div class="dropdown">
+      <button class="btn dropdown-toggle " style="color:#051367"  type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+        Medicamentos
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+        <li><a class="dropdown-item" href="/medicamento" style="color:#2D31FA">Agregar Medicamento</a></li>
+        <li><a class="dropdown-item" display="flex" href="/medicamento/listaMedicamentos" style="color: #2D31FA">Lista de Medicamentos</a></li>
+      </ul>
+    </div>
+
+    <div class="dropdown">
+      <button class="btn dropdown-toggle " style="color:#051367"  type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+        Diagnosticos
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+        <li><a class="dropdown-item" href="/diagnostico" style="color:#2D31FA">Agregar Diagnosticos</a></li>
+        <li><a class="dropdown-item" display="flex" href="/diagnostico/listaDiagnostico" style="color: #2D31FA">Lista de Diagnosticos</a></li>
+      </ul>
+    </div>
+
+    <span>
+      <a href="/logout" class="btn btn-danger btn-lg active" role="button" aria-pressed="true" type="submit" style="background-color:#DFF6FF; border-color:#DFF6FF; color:#5D8BF4">Cierre</a> 
+    </span>
+</nav>
