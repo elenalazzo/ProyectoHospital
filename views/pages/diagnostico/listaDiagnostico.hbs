@@ -1,10 +1,10 @@
 {{> header}}
-<h2>{{viewTitle}}</h2>
-<table border="1">
-    <thead>
-        <th>ID Diagnostico </th> 
-        <th>ID Paciente </th>
-        <th>Diagnostico </th>
+<center><h2 style="color:#5D8BF4">{{viewTitle}}</h2></center>
+<table class="table" border="1">
+    <thead style="color:#5D8BF4">
+        <th scope="col">ID Diagnostico </th> 
+        <th scope="col">ID Paciente </th>
+        <th scope="col">Diagnostico </th>
     </thead>
     <tbody>
         {{#each list}}

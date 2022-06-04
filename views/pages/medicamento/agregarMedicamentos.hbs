@@ -1,15 +1,47 @@
 {{> header}}
-<h2>{{viewTitle}}</h2>
-<form action="/medicamento" method="POST">
+<center><h2 style="color:#5D8BF4">{{viewTitle}}</h2></center>
+<form action="/medicamento" method="POST" style="margin: auto; width: 800px;">    
     <input type="hidden" name="_id" value="{{medicamento._id}}" />
-    ID Medicamentos
-    <input type="text" name="idmedi" value="{{medicamento.idmedi}}"><br />
-    ID Paciente
-    <input type="text" name="idpaciente" value="{{medicamento.idpaciente}}"><br />
-    Nombre Medicamento
-    <input type="text" name="namemedi" value="{{medicamento.namemedi}}"><br />
-    Fecha de Receta
-    <input type="text" name="recetaDate" value="{{medicamento.recetaDate}}"><br />
 
-    <center><button type="submit" class="btn btn-info btn-lg">Guardar</button></center>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label">ID Medicamentos</label>
+        <br>
+        <div class="col-sm-10">
+        <input type="text" name="idmedi" value="{{medicamento.idmedi}}" class="form-control" placeholder="ID Medicamentos">
+        </div>
+    </div>
+
+        <br>
+
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label">ID Paciente</label>
+        <br>
+        <div class="col-sm-10">
+        <input type="text" name="idpaciente" value="{{medicamento.idpaciente}}" class="form-control" placeholder="ID Paciente">
+        </div>
+    </div>
+
+        <br>
+
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Nombre Medicamento</label>
+        <br>
+        <div class="col-sm-10">
+        <input type="text" name="namemedi" value="{{medicamento.namemedi}}" class="form-control" placeholder="Nombre Medicamento">
+        </div>
+    </div>
+
+        <br>
+
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Fecha de Receta</label>
+        <br>
+        <div class="col-sm-10">
+        <input type="text" name="recetaDate" value="{{medicamento.recetaDate}}" class="form-control" placeholder="Fecha de Receta">
+        </div>
+    </div>
+
+        <br>
+
+    <center><button type="submit" style="background-color:#5D8BF4; border-color:#5D8BF4; color:#DFF6FF" class="btn btn-lg active">Guardar</button></center>
 </form>

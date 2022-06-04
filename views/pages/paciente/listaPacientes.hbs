@@ -1,13 +1,13 @@
 {{> header}}
-<h2>{{viewTitle}}</h2>
-<table border="1">
-    <thead>
-        <th>ID</th>
-        <th>Nombres Completo</th>
-        <th>Apellisdos Completo</th>
-        <th>DUI</th>
-        <th>Descripción del Paciente</th>
-        <th>Nombre del Doctor</th>
+<center><h2 style="color:#5D8BF4">{{viewTitle}}</h2></center>
+<table class="table" border="1">
+    <thead style="color:#5D8BF4">
+        <th scope="col">ID</th>
+        <th scope="col">Nombres Completo</th>
+        <th scope="col">Apellisdos Completo</th>
+        <th scope="col">DUI</th>
+        <th scope="col">Descripción del Paciente</th>
+        <th scope="col">Nombre del Doctor</th>
     </thead>
     <tbody>
         {{#each list}}

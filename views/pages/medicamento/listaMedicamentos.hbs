@@ -1,11 +1,11 @@
 {{> header}}
-<h2>{{viewTitle}}</h2>
-<table border="1">
-    <thead>
-        <th>ID Medicamento</th>
-        <th>ID Paciente</th> 
-        <th>Nombre Medicamento</th>
-        <th>Fecha de Receta</th>    
+<center><h2 style="color:#5D8BF4">{{viewTitle}}</h2></center>
+<table class="table" border="1">
+    <thead style="color:#5D8BF4">
+        <th scope="col">ID Medicamento</th>
+        <th scope="col">ID Paciente</th> 
+        <th scope="col">Nombre Medicamento</th>
+        <th scope="col">Fecha de Receta</th>    
     </thead>
     <tbody>
         {{#each list}}

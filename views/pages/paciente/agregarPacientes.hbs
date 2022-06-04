@@ -1,19 +1,65 @@
 {{> header}}
-<h2>{{viewTitle}}</h2>
-<form action="/paciente" method="POST">
+<center><h2 style="color:#5D8BF4">{{viewTitle}}</h2></center>
+<form action="/paciente" method="POST" style="margin: auto; width: 800px;">    
     <input type="hidden" name="_id" value="{{paciente._id}}" />
-    ID 
-    <input type="text" name="idpaciente" value="{{paciente.idpaciente}}"><br />
-    Nombres
-    <input type="text" name="nombrepaciente" value="{{paciente.nombrepaciente}}"><br />
-    Apellidos
-    <input type="text" name="apellidopaciente" value="{{paciente.apellidopaciente}}"><br />
-    DUI
-    <input type="text" name="dui" value="{{paciente.dui}}"><br />
-    Descripción del Paciente
-    <input type="text" name="diagnostico" value="{{paciente.diagnostico}}"><br />
-    Nombre del Doctor
-    <input type="text" name="nombredoctor" value="{{paciente.nombredoctor}}"><br />
 
-    <center><button type="submit" class="btn btn-info btn-lg">Guardar</button></center>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label">ID</label>
+        <br>
+        <div class="col-sm-10">
+        <input type="text" name="idpaciente" value="{{paciente.idpaciente}}" class="form-control" placeholder="ID">
+        </div>
+    </div>
+
+        <br>
+
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Nombres</label>
+        <br>
+        <div class="col-sm-10">
+        <input type="text" name="nombrepaciente" value="{{paciente.nombrepaciente}}" class="form-control" placeholder="Nombres">
+        </div>
+    </div>
+
+        <br>
+
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Apellidos</label>
+        <br>
+        <div class="col-sm-10">
+        <input type="text" name="apellidopaciente" value="{{paciente.apellidopaciente}}" class="form-control" placeholder="Apellidos">
+        </div>
+    </div>
+
+        <br>
+
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label">DUI</label>
+        <br>
+        <div class="col-sm-10">
+        <input type="text" name="dui" value="{{paciente.dui}}" class="form-control" placeholder="DUI">
+        </div>
+    </div>
+
+        <br>
+
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Descripción del Paciente</label>
+        <br>
+        <div class="col-sm-10">
+        <input type="text" name="diagnostico" value="{{paciente.diagnostico}}" class="form-control" placeholder="Descripción del Paciente">
+        </div>
+    </div>
+
+        <br>
+
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Nombre del Doctor</label>
+        <br>
+        <div class="col-sm-10">
+        <input type="text" name="nombredoctor" value="{{paciente.nombredoctor}}" class="form-control" placeholder="Nombre del Doctor">
+        </div>
+    </div>
+
+    <center><button type="submit" style="background-color:#5D8BF4; border-color:#5D8BF4; color:#DFF6FF" class="btn btn-lg active">Guardar</button></center>
 </form>
